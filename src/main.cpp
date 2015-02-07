@@ -156,6 +156,13 @@ int main (int argc, char* argv[])
                 return 0;
             }
         }
+        else {
+            std::cout << desc << std::endl;
+            std::cout << "Example:" << std::endl;
+            std::cout << "$ COEGen --file binary.bin --width 8 --depth 256" << std::endl;
+            std::cout << "This will output 'binary.bin.coe'" << std::endl;
+            std::cout << "------------------------------------------------" << std::endl;
+        }
 
 
     }
