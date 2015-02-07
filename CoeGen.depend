@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1423311815 source:/home/darren/projects/CoeGen/src/main.cpp
+	<boost/program_options.hpp>
+	<iostream>
+	<fstream>
+	<string>
+
