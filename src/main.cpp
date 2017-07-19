@@ -12,7 +12,7 @@ void DoConversion(std::string fname, int width, int depth)
     unsigned char* buffer;
     std::string outputfname;
     size_t filesize;
-    int memlength = depth * (width / 8);
+    unsigned int memlength = depth * (width / 8);
 
     if(inputfile.is_open())
     {
@@ -42,7 +42,7 @@ void DoConversion(std::string fname, int width, int depth)
                 outputfile << "memory_initialization_vector=" << std::endl;
 
                 int wcnt, dcnt;
-                int bufcnt;
+                unsigned int bufcnt;
 
                 //The actual conversion process.
                 for(dcnt=0;dcnt<depth;dcnt++)
